@@ -1,0 +1,79 @@
+.infra_body {
+  /*background-color: black;*/
+  height: 300px;
+  width: 100%;
+  float: left;
+}
+p {
+  color: white;
+  margin: 0px;
+  text-align: center;
+  line-height: 100px;
+}
+@media only screen and (min-width: 451px) {
+  /* 手机 */
+  .infra_body {
+    width: 50%;
+  }
+}
+img {
+  width: 50%;
+  height: 50%;
+  margin-left: 25%;
+}
+.layer1 {
+  /*background-color: #2b2192;*/
+  width: 100px;
+  border-bottom: 45px solid #03A9F4;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  height: 2px;
+  color: white;
+  margin-left: 30px;
+  font-size: 12px;
+  line-height: 45px;
+  text-align: center;
+}
+.layer2 {
+  /*background-color: #2b2192;*/
+  width: 120px;
+  border-bottom: 45px solid #00bcd4;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  height: 2px;
+  color: white;
+  margin-left: 20px;
+  font-size: 12px;
+  line-height: 45px;
+  text-align: center;
+}
+.layer3 {
+  /*background-color: #2b2192;*/
+  width: 140px;
+  border-bottom: 45px solid #009688;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  height: 2px;
+  color: white;
+  margin-left: 10px;
+  font-size: 12px;
+  line-height: 45px;
+  text-align: center;
+}
+.layer4 {
+  /*background-color: #2b2192;*/
+  width: 160px;
+  border-bottom: 45px solid #259b24;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  height: 2px;
+  color: white;
+  font-size: 12px;
+  line-height: 45px;
+  text-align: center;
+}
+
+.layers {
+  padding-left: 39%;
+  padding-top: 6%;
+}

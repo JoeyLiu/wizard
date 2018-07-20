@@ -1,0 +1,23 @@
+.features_body {
+  background-color: white;
+  /*height: 300px;*/
+  width: 100%;
+  float: left;
+}
+p {
+  color: white;
+  margin: 0px;
+  text-align: center;
+  line-height: 100px;
+}
+@media only screen and (min-width: 451px) {
+  /* 手机 */
+  .features_body {
+    width: 50%;
+  }
+}
+img {
+  width: 50%;
+  height: 50%;
+  margin-left: 25%;
+}

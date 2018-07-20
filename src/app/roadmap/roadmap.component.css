@@ -1,0 +1,16 @@
+.roadmap_body {
+  background-color: white;
+  /*height: 100px;*/
+  width: 100%;
+  float: left;
+}
+p {
+  color: white;
+  margin: 0px;
+  text-align: center;
+  line-height: 100px;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
