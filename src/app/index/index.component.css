@@ -4,6 +4,23 @@
   width: 100%;
   float: left;
 }
+button {
+  color: white;
+  font-size: 12px;
+  min-width: 10px;
+  padding: 0px;
+  line-height: 0px;
+  font-weight: 200;
+}
+.title {
+  position: absolute;
+  letter-spacing: 1.5px;
+  margin-top: 22%;
+  height: 15%;
+  margin-left: 8%;
+  color: white;
+  font-family: Helvetica;
+}
 img {
   width: 100%;
 }
@@ -14,13 +31,12 @@ p {
   line-height: 100px;
 }
 a {
-  color: white;
+  /*color: white;*/
   text-decoration:none;
   /*margin-left: 5%;*/
   margin-right: 5%;
   font-size: 12px;
-  color: #dddddd;
-  font-weight: bold;
+  font-weight: 200;
 }
 
 .banner{
@@ -28,18 +44,30 @@ a {
   width: 100%;
   padding-top: 1%;
   padding-bottom: 1%;
-  background-color: rgba(0,0,0,.54);
+  /*background-color: rgba(0,0,0,.54);*/
+}
+.banner a{
+  color: white;
+}
+.banner_scroll{
+  position: fixed;
+  width: 100%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  background-color: white;
+  color: #267DD0;
+  z-index: 1000000;
 }
 
-button {
-  color: white;
-  font-size: 12px;
-  min-width: 10px;
-  padding: 0 5px;
-  line-height: 0px;
-  color: #dddddd;
-  font-weight: 200;
+.banner_scroll a{
+  color: #267DD0;
 }
+
+.banner_scroll button{
+  color: #267DD0;
+}
+
+
 @media only screen and (min-width: 451px) {
   /* PC */
 
@@ -55,6 +83,32 @@ button {
     padding-left: 20%;
     float: left;
   }
+  .title {
+    margin-top: 22%;
+    margin-left: 22%;
+    font-family: Helvetica;
+  }
+  .title1{
+    font-size: 2em;
+    line-height: 40px;
+  }
+  .title2 {
+    font-size: 1.4em;
+    line-height: 20px;
+    font-weight: 200;
+  }
+  .title3 {
+    font-size: 1em;
+    line-height: 28px;
+    font-family: "PingFang SC";
+  }
+  .vertical {
+    border-left: 5px solid white;
+    height: 10.5%;
+    position: absolute;
+    margin-top: 22.5%;
+    margin-left: 20.5%;
+  }
 }
 @media only screen and (max-width: 450px) {
   /* 手机 */
@@ -67,5 +121,21 @@ button {
   .language {
     width: 30%;
     float: left;
+  }
+  .title {
+    margin-top: 22%;
+    margin-left: 8%;
+    font-family: Helvetica;
+  }
+  .title1{
+    font-size: 1em;
+  }
+  .title2 {
+    font-size: 0.7em;
+    font-weight: 200;
+  }
+  .title3 {
+    font-size: 0.5em;
+    font-family: "PingFang SC";
   }
 }

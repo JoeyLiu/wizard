@@ -4,8 +4,38 @@
   width: 100%;
   float: left;
 }
-
-img {
+p{
+  color: white;
+  margin: 0px;
+  text-align: center;
+  /*line-height: 20px;*/
+  font-size: 12px;
+  font-weight: 100;
+}
+.infra_head {
+  margin-top: 10%;
+}
+.infra_head p {
+  font-size: 36px;
+  font-weight: 400;
+}
+.infra_title {
+  color: #1E1482;
+}
+.infra_subtitle{
+  color: #267DD0;
+}
+.download {
+  margin-left: auto;
+  margin-right: auto;
+  width: 130px;
+  margin-top: 1%;
+}
+.download img {
   width: 100%;
-  height: 100%;
+}
+.download p {
+  position: absolute;
+  width: 130px;
+  line-height: 32.5px;
 }

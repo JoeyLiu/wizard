@@ -1,22 +1,74 @@
 .eco_body {
-  background-color: #2b2192;
+  background-color: #1E1482;
   /*height: 300px;*/
   width: 100%;
   float: left;
 }
-p {
+.eco_head p {
+  font-size: 36px;
+  font-weight: 400;
+}
+.eco_title {
+  margin-right: 18%;
+  width: 48%;
+  text-align: right;
+}
+.eco_subtitle{
+  margin-top: -1%;
+  width: 48%;
+  margin-left: 52%;
+  text-align: left;
+}
+.background {
+  width: 130px;
+  height: 150px;
+  position: absolute;
+  opacity: .2;
+  margin-left: 80%;
+  margin-top: 55%;
+}
+p{
   color: white;
   margin: 0px;
   text-align: center;
-  line-height: 100px;
+  line-height: 20px;
+  font-size: 12px;
+  font-weight: 100;
 }
-@media only screen and (min-width: 451px) {
-  /* 手机 */
-  .eco_body {
-    width: 50%;
-  }
-}
+
+/*@media only screen and (min-width: 451px) {*/
+  /*.eco_body {*/
+    /*width: 50%;*/
+  /*}*/
+/*}*/
 img {
   width: 100%;
   height: 100%;
+}
+.eco_subtitle{
+  color: #267DD0;
+}
+.eco_head {
+  margin: 10%;
+}
+.eco_content1 {
+  width: 12.5%;
+  margin-left: 42%;
+  margin-top: 10%;
+}
+.eco_content2 {
+  width: 20%;
+  margin-left: 22%;
+  margin-top: -3%;
+}
+.eco_content3 {
+  width: 20%;
+  margin-left: 62%;
+  margin-top: -18%;
+}
+.eco_content4 {
+   width: 25%;
+  margin-left: 42%;
+  margin-top: -6%;
+  margin-bottom: 10%;
 }

@@ -11,5 +11,7 @@ export class ConceptComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  showTxt(){
+    console.log('clicked');
+  }
 }

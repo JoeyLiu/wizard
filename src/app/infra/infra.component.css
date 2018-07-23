@@ -23,7 +23,7 @@ img {
 }
 .layer1 {
   /*background-color: #2b2192;*/
-  width: 100px;
+  width: 18%;
   border-bottom: 45px solid #03A9F4;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
@@ -33,10 +33,12 @@ img {
   font-size: 12px;
   line-height: 45px;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 .layer2 {
   /*background-color: #2b2192;*/
-  width: 120px;
+  width: 25%;
   border-bottom: 45px solid #00bcd4;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
@@ -46,10 +48,12 @@ img {
   font-size: 12px;
   line-height: 45px;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 .layer3 {
   /*background-color: #2b2192;*/
-  width: 140px;
+  width: 35%;
   border-bottom: 45px solid #009688;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
@@ -59,10 +63,12 @@ img {
   font-size: 12px;
   line-height: 45px;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 .layer4 {
   /*background-color: #2b2192;*/
-  width: 160px;
+  width: 40%;
   border-bottom: 45px solid #259b24;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
@@ -71,9 +77,11 @@ img {
   font-size: 12px;
   line-height: 45px;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .layers {
-  padding-left: 39%;
-  padding-top: 6%;
+  /*padding-left: 39%;*/
+  /*padding-top: 6%;*/
 }

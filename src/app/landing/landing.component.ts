@@ -17,6 +17,7 @@ export class LandingComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    this.showAll();
     console.log(navigator.userAgent);
     if(navigator.userAgent.indexOf('iPad') !== -1) {
       this.userAgent = 2;
@@ -27,7 +28,7 @@ export class LandingComponent implements OnInit {
       this.showSection3 = true;
     }
     this.timer = setInterval(() => {
-      this.checkScreen();
+      //this.checkScreen();
     }, 200);
     //document.addEventListener('DOMContentLoaded',this.loaded());
   }
@@ -68,5 +69,11 @@ export class LandingComponent implements OnInit {
 
   loaded(){
     console.log('loaded');
+  }
+  showAll(){
+    this.showSection6 = true;
+    this.showSection5 = true;
+    this.showSection4 = true;
+    this.showSection3 = true;
   }
 }
