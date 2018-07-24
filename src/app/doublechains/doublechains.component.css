@@ -55,3 +55,38 @@ img {
   margin-top: 5%;
   margin-bottom: 10%;
 }
+@media only screen and (min-width: 1400px) {
+  .doublechain_content6 {
+    margin-top: 8%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .doublechain_content6 {
+
+    margin-top: 7%;
+
+  }
+}
+@media only screen and (min-width: 1100px) and (max-width: 1199px) {
+  .doublechain_content6 {
+
+    margin-top: 6%;
+
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .doublechain_content6 {
+
+    margin-top: 4%;
+
+  }
+}
+@media only screen and (max-width: 800px) and (min-width: 450px){
+  .doublechain_content img {
+    width: 18%;
+    position: absolute;
+    margin-left: 41%;
+    margin-top: -30%;
+    opacity: 1;
+  }
+}

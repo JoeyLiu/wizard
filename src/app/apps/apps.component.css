@@ -4,20 +4,49 @@
   width: 100%;
   float: left;
 }
-p {
+p{
   color: white;
   margin: 0px;
   text-align: center;
-  line-height: 100px;
+  /*line-height: 20px;*/
+  font-size: 12px;
+  font-weight: 100;
 }
-@media only screen and (min-width: 451px) {
-  /* 手机 */
-  /*.apps_body {*/
-    /*width: 50%;*/
-  /*}*/
+.apps_head {
+  margin-top: 10%;
+}
+.apps_head p {
+  font-size: 36px;
+  font-weight: 400;
+}
+.apps_title {
+  color: #1E1482;
+}
+.apps_subtitle{
+  color: #267DD0;
+}
+.apps_middle {
+  border-right-style: solid;
+  border-color: #eeeeee;
+  border-right-width: 1px;
 }
 
+.apps_list {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
 img {
-  width: 100%;
-  height: 100%;
+  width: 20px;
+  /*height: 20px;*/
+  padding: 5px;
+}
+.apps_list p {
+  color: grey;
+  margin: 0px;
+  text-align: center;
+  font-size: 12px;
+  opacity: .8;
 }
