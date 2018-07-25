@@ -19,7 +19,7 @@ export class LandingComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log(returnCitySN["cip"]);
+    // console.log(returnCitySN["cip"]);
     this.showAll();
     console.log(navigator.userAgent);
     if(navigator.userAgent.indexOf('iPad') !== -1) {

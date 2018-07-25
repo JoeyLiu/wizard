@@ -12,19 +12,56 @@ p{
   font-size: 12px;
   font-weight: 100;
 }
-.services_head {
+.services_heads {
   position: absolute;
   width: 100%;
-  margin-top: 5%;
+  margin-top: 3%;
 }
-.services_head p {
+.services_heads p {
   font-size: 36px;
   font-weight: 400;
 }
-.services_subtitle{
+.services_subhead{
   color: #267DD0;
 }
 img {
   width: 100%;
 
+}
+.services_titles {
+  width: 80%;
+  position: absolute;
+  float: left;
+  color: white;
+  margin-top: -28%;
+  margin-left: 10%;
+  border-bottom: 1px solid white;
+}
+.services_title {
+  width: 14%;
+  margin: 3%;
+  float: left;
+  text-align: center;
+  font-size: 12px;
+  -webkit-transform:scale(0.8);
+  -moz-transform: scale(1);
+  font-weight: 200;
+}
+.services_contents {
+  width: 80%;
+  position: absolute;
+  float: left;
+  color: white;
+  margin-top: -23%;
+  margin-left: 10%;
+}
+.services_content {
+  width: 14%;
+  margin: 3%;
+  float: left;
+  text-align: center;
+  font-size: 12px;
+  -webkit-transform:scale(0.8);
+  -moz-transform: scale(1);
+  font-weight: 200;
 }
