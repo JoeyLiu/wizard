@@ -1,26 +1,46 @@
 <div class="concept_body">
+  <div class="detail_toggle">
+    <!--<p class="toogle_txt">宗旨</p>-->
+    <mat-slide-toggle color="primary" [checked]="checked" (toggleChange)="toggleall()" labelPosition="before">详细</mat-slide-toggle>
+    <!--<p class="toogle_txt">详情</p>-->
+  </div>
   <mat-grid-list cols="4" class="concept_list">
     <mat-grid-tile class="concept_middle">
-      <p class="concept_head1">
+      <p class="concept_head1" *ngIf="!checks[0]" (mouseover)="check(1)" (mouseleave)="uncheck(1)">
         <img src="/assets/concept_icon1.png" style="padding: 7.5px;">
         <br/>公开透明<br/>TRANSPARENT
       </p>
+      <p class="concept_head1_txt" *ngIf="checks[0]" (mouseover)="check(1)" (mouseleave)="uncheck(1)">
+        {{head1_txt}}
+      </p>
     </mat-grid-tile>
     <mat-grid-tile class="concept_middle">
-      <p class="concept_head1">
+      <p class="concept_head1" *ngIf="!checks[1]" (mouseover)="check(2)" (mouseleave)="uncheck(2)">
         <img src="/assets/concept_icon2.png">
         <br/>简洁流畅<br/>CONCISE
       </p>
+      <p class="concept_head1_txt" *ngIf="checks[1]" (mouseover)="check(2)" (mouseleave)="uncheck(2)">
+        {{head2_txt}}
+      </p>
     </mat-grid-tile>
     <mat-grid-tile class="concept_middle">
-      <p class="concept_head1">
+      <p class="concept_head1" *ngIf="!checks[2]" (mouseover)="check(3)" (mouseleave)="uncheck(3)">
         <img src="/assets/concept_icon3.png">
         <br/>代码开源<br/>OPEN SOURCE
       </p>
+      <p class="concept_head1_txt" *ngIf="checks[2]" (mouseover)="check(3)" (mouseleave)="uncheck(3)">
+        {{head3_txt}}
+      </p>
     </mat-grid-tile>
-    <mat-grid-tile>      <p class="concept_head1">
-      <img src="/assets/concept_icon4.png" style="padding: 6.5px;">
-      <br/>社区自治<br/>COMMUNITY
-    </p></mat-grid-tile>
+    <mat-grid-tile>
+      <p class="concept_head1" *ngIf="!checks[3]" (mouseover)="check(4)" (mouseleave)="uncheck(4)">
+        <img src="/assets/concept_icon4.png" style="padding: 6.5px;">
+        <br/>社区自治<br/>COMMUNITY
+      </p>
+      <p class="concept_head1_txt" *ngIf="checks[3]" (mouseover)="check(4)" (mouseleave)="uncheck(4)">
+        {{head4_txt}}
+      </p>
+    </mat-grid-tile>
   </mat-grid-list>
+
 </div>

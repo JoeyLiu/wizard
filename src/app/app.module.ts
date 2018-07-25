@@ -12,7 +12,7 @@ import { AppsComponent } from './apps/apps.component';
 import { ServicesComponent } from './services/services.component';
 import { TeamComponent } from './team/team.component';
 import { RoadmapComponent } from './roadmap/roadmap.component';
-import {MatButtonModule, MatGridListModule, MatIconModule} from '@angular/material';
+import {MatButtonModule, MatGridListModule, MatIconModule, MatSlideToggleModule} from '@angular/material';
 import { InfraTitleComponent } from './infra-title/infra-title.component';
 import { FooterComponent } from './footer/footer.component';
 import { LandingComponent } from './landing/landing.component';
@@ -39,6 +39,7 @@ import { LandingComponent } from './landing/landing.component';
     MatButtonModule,
     MatGridListModule,
     MatIconModule,
+    MatSlideToggleModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

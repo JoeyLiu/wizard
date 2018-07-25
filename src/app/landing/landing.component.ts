@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+declare var returnCitySN: any;
 
 @Component({
   selector: 'app-landing',
@@ -14,9 +15,11 @@ export class LandingComponent implements OnInit {
   showSection5: any;
   showSection6: any;
   userAgent: any;
+  // returnCitySN: any;
   constructor() { }
 
   ngOnInit() {
+    console.log(returnCitySN["cip"]);
     this.showAll();
     console.log(navigator.userAgent);
     if(navigator.userAgent.indexOf('iPad') !== -1) {
