@@ -69,16 +69,12 @@ img {
 }
 @media only screen and (min-width: 1100px) and (max-width: 1199px) {
   .doublechain_content6 {
-
     margin-top: 6%;
-
   }
 }
 @media only screen and (max-width: 1000px) {
   .doublechain_content6 {
-
     margin-top: 4%;
-
   }
 }
 @media only screen and (max-width: 800px) and (min-width: 450px){
@@ -88,5 +84,40 @@ img {
     margin-left: 41%;
     margin-top: -30%;
     opacity: 1;
+  }
+}
+@media only screen and (max-width:450px) {
+  .doublechain_head p {
+    font-size: 24px;
+    /*font-weight: 400;*/
+  }
+  .doublechain_content img {
+    width: 30%;
+    margin-left: 35%;
+  }
+  .doublechain_content1 {
+    /*margin-left: 1%;*/
+    margin-top: -38%;
+  }
+  .doublechain_content2 {
+    margin-left: -45%;
+    margin-top: 5.5%;
+  }
+  .doublechain_content3 {
+    margin-left: 45%;
+    margin-top: -3.5%;
+  }
+  .doublechain_content4 {
+    margin-left: -45%;
+    margin-top: 16%;
+  }
+  .doublechain_content5 {
+    margin-left: 48%;
+    margin-top: -3.5%;
+  }
+  .doublechain_content6 {
+    margin-left: 0%;
+    margin-top: 6%;
+    margin-bottom: 10%;
   }
 }

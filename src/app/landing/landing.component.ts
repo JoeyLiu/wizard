@@ -15,6 +15,8 @@ export class LandingComponent implements OnInit {
   showSection5: any;
   showSection6: any;
   userAgent: any;
+  pc: boolean;
+  phone: boolean;
   // returnCitySN: any;
   constructor() { }
 
@@ -29,6 +31,11 @@ export class LandingComponent implements OnInit {
     this.windowWidth = document.body.clientWidth;
     if (this.windowWidth < 500 || this.userAgent === 2) {
       this.showSection3 = true;
+    }
+    if (this.windowWidth < 450 ) {
+      this.phone = true;
+    } else {
+      this.pc = true;
     }
     this.timer = setInterval(() => {
       //this.checkScreen();

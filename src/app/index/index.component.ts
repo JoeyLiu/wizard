@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IndexComponent implements OnInit {
   timer: any;
+  pc: boolean;
   offset: any;
   windowWidth: any;
   showSection3: any;
@@ -18,21 +19,28 @@ export class IndexComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.el = document.getElementById('banner');
-    this.el.className = 'banner';
     this.timer = setInterval(() => {
       this.checkScreen();
     }, 200);
+
   }
   checkScreen() {
-    let currentOffset = window.pageYOffset;
 
-    if(currentOffset > 150) {
-      this.el.className = 'banner_scroll';
-      console.log('show scroll banner');
+    if (document.body.clientWidth < 450) {
+      this.pc = false;
     } else {
+      this.pc = true;
+      this.el = document.getElementById('banner');
       this.el.className = 'banner';
-      console.log('show normal banner');
+      let currentOffset = window.pageYOffset;
+
+      if(currentOffset > 150) {
+        this.el.className = 'banner_scroll';
+        console.log('show scroll banner');
+      } else {
+        this.el.className = 'banner';
+        console.log('show normal banner');
+      }
     }
   }
 

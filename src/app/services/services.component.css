@@ -25,8 +25,8 @@ p{
   color: #267DD0;
 }
 img {
-  width: 100%;
-
+  width: 90%;
+  margin-left: 10%;
 }
 .services_titles {
   width: 80%;
@@ -36,6 +36,7 @@ img {
   margin-top: -28%;
   margin-left: 10%;
   border-bottom: 1px solid white;
+  padding-right: 10%;
 }
 .services_title {
   width: 14%;

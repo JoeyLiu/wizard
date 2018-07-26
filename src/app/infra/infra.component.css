@@ -4,7 +4,7 @@
   width: 100%;
   float: left;
   margin-top: 5%;
-  margin-left: 10%;
+  /*margin-left: 10%;*/
 }
 p {
   color: white;
@@ -88,3 +88,4 @@ img {
   /*padding-top: 6%;*/
   font-weight: 200;
 }
+

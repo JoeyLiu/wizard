@@ -14,7 +14,8 @@
 </div>
 <div class="section4" *ngIf="showSection4">
   <app-apps></app-apps>
-  <app-services></app-services>
+  <app-services *ngIf="pc"></app-services>
+  <app-services_phone *ngIf="phone"></app-services_phone>
 </div>
 <div class="section5" *ngIf="showSection5">
   <app-team></app-team>

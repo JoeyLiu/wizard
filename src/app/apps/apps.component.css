@@ -25,7 +25,17 @@ p{
 .apps_subtitle{
   color: #267DD0;
 }
-.apps_middle {
+.apps_1 {
+  border-right-style: solid;
+  border-color: #eeeeee;
+  border-right-width: 1px;
+}
+.apps_2 {
+  border-right-style: solid;
+  border-color: #eeeeee;
+  border-right-width: 1px;
+}
+.apps_3 {
   border-right-style: solid;
   border-color: #eeeeee;
   border-right-width: 1px;
@@ -44,9 +54,33 @@ img {
   padding: 5px;
 }
 .apps_list p {
-  color: grey;
+  color: #646464;
   margin: 0px;
   text-align: center;
   font-size: 12px;
   opacity: .8;
+}
+@media only screen and (max-width:450px) {
+  .apps_head p {
+    font-size: 24px;
+    font-weight: 400;
+  }
+  .apps_2 {
+    border-right-style: none;
+    border-color: #eeeeee;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+  }
+  .apps_3 {
+    border-right-style: solid;
+    border-color: #eeeeee;
+    border-right-width: 1px;
+    border-top-style: solid;
+    border-top-width: 1px;
+  }
+  .apps_list {
+
+    margin-bottom: 0px;
+    width: 80%;
+  }
 }

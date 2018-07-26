@@ -12,10 +12,11 @@ import { AppsComponent } from './apps/apps.component';
 import { ServicesComponent } from './services/services.component';
 import { TeamComponent } from './team/team.component';
 import { RoadmapComponent } from './roadmap/roadmap.component';
-import {MatButtonModule, MatGridListModule, MatIconModule, MatSlideToggleModule} from '@angular/material';
+import {MatButtonModule, MatDividerModule, MatGridListModule, MatIconModule, MatSlideToggleModule} from '@angular/material';
 import { InfraTitleComponent } from './infra-title/infra-title.component';
 import { FooterComponent } from './footer/footer.component';
 import { LandingComponent } from './landing/landing.component';
+import {Services_phoneComponent} from './services_phone/services_phone.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { LandingComponent } from './landing/landing.component';
     RoadmapComponent,
     InfraTitleComponent,
     FooterComponent,
-    LandingComponent
+    LandingComponent,
+    Services_phoneComponent,
   ],
   imports: [
     BrowserModule,
@@ -40,6 +42,7 @@ import { LandingComponent } from './landing/landing.component';
     MatGridListModule,
     MatIconModule,
     MatSlideToggleModule,
+    MatDividerModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

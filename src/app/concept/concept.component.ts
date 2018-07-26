@@ -7,11 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ConceptComponent implements OnInit {
   // toggle: boolean;
+  pc: boolean;
   checked: boolean;
   head1_txt: string;
   head2_txt: string;
   head3_txt: string;
   head4_txt: string;
+  col_count: any;
   checks = [
 
   ];
@@ -22,6 +24,18 @@ export class ConceptComponent implements OnInit {
     // this.checks.push(this.checked1);
     // this.checks.push(this.checked2);
     this.showTxt();
+    if (document.body.clientWidth > 450) {
+      this.pc = true;
+      this.col_count = 4;
+    } else {
+      this.pc = false;
+      console.log('hide toggle');
+      this.col_count = 2;
+    }
+  }
+  click(index: number){
+    this.checks[index - 1] = !this.checks[index - 1];
+    console.log(index-1 + 'clicked!');
   }
   check(index: number){
     //this.toggleall();

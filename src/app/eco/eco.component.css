@@ -72,3 +72,31 @@ img {
   margin-top: -6%;
   margin-bottom: 10%;
 }
+
+@media only screen and (max-width:450px) {
+  .eco_head p {
+    font-size: 24px;
+    /*font-weight: 400;*/
+  }
+  .eco_content1 {
+    width: 27.5%;
+    margin-left: 14%;
+    margin-top: -2%;
+  }
+  .eco_content2 {
+    width: 51%;
+    margin-left: 45%;
+    margin-top: -16%;
+  }
+  .eco_content3 {
+    width: 52%;
+    margin-left: 3%;
+    margin-top: -7%;
+  }
+  .eco_content4 {
+    width: 50%;
+    margin-left: 47%;
+    margin-top: -23%;
+    margin-bottom: 10%;
+  }
+}

@@ -101,7 +101,7 @@ img {
   .content {
     width: 86%;
     margin-top: -61%;
-    margin-left: 9%;
+    margin-left: 7%;
     font-size: 12px;
     /*line-height: 40px;*/
 
@@ -109,7 +109,7 @@ img {
   img {
     width: 50%;
     /*height: 50%;*/
-    margin-left: 28%;
+    margin-left: 25%;
     margin-top: 25%;
   }
 }

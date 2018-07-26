@@ -41,7 +41,7 @@ p {
 }
 .roadmap_left_detail {
   width: 50%;
-  min-width: 200px;
+  min-width: 185px;
   float: right;
   margin-right: 4%;
   margin-bottom: 6%;
@@ -52,14 +52,15 @@ p {
 }
 .roadmap_right_detail {
   width: 50%;
-  min-width: 200px;
+  min-width: 185px;
   float: left;
   margin-left: 4%;
   margin-bottom: 6%;
 }
 .roadmap_card {
   position: absolute;
-  margin-top: -10%;
+  margin-top: -12%;
+  width: 50%;
 
 }
 .roadmap_card_month {
@@ -80,7 +81,7 @@ p {
 
 @media only screen and (min-width: 800px) and (max-width: 900px) {
   .roadmap_card_month {
-    margin-top: -5%;
+    margin-top: -6%;
   }
 }
 @media only screen and (min-width: 901px) and (max-width: 1000px) {
@@ -88,8 +89,22 @@ p {
     margin-top: 0%;
   }
 }
-@media only screen and (min-width: 1001px) and (max-width: 1600px) {
+@media only screen and (min-width: 1001px) and (max-width: 1200px) {
   .roadmap_card_month {
     margin-top: 5%;
+  }
+  .roadmap_card_detail {
+    width: 85%;
+  }
+}
+@media only screen and (min-width: 1201px){
+  .roadmap_card {
+    margin-top: -11%;
+    width: 250px;
+  }
+}
+@media only screen and (max-width: 450px){
+  .roadmap_icon_2017 {
+    width: 21%;
   }
 }
