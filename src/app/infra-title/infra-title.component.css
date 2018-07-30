@@ -30,6 +30,7 @@ p{
   margin-right: auto;
   width: 130px;
   margin-top: 1%;
+  cursor:pointer;
 }
 .download img {
   width: 100%;

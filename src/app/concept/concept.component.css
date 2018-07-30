@@ -11,7 +11,8 @@ p {
   font-size: 12px;
   -webkit-transform:scale(0.8);
   -moz-transform: scale(1);
-  opacity: .8;
+  opacity: 1;
+  letter-spacing: 1.5px;
 }
 .concept_1 {
   border-right-style: solid;
@@ -84,5 +85,15 @@ mat-slide-toggle {
     border-right-width: 1px;
     border-top-style: solid;
     border-top-width: 1px;
+  }
+  .detail_toggle {
+    padding-left: 0%;
+    width: 20%;
+    margin-left: 79%;
+  }
+  img {
+    width: 40px;
+    /*height: 20px;*/
+    /*padding: 5px;*/
   }
 }

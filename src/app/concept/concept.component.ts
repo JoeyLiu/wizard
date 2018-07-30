@@ -33,7 +33,7 @@ export class ConceptComponent implements OnInit {
       this.col_count = 2;
     }
   }
-  click(index: number){
+  clicked(index: number){
     this.checks[index - 1] = !this.checks[index - 1];
     console.log(index-1 + 'clicked!');
   }

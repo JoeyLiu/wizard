@@ -1,9 +1,9 @@
 
-<div class="section1">
+<div class="section1" *ngIf="showSection1">
   <app-index></app-index>
   <app-concept></app-concept>
 </div>
-<div class="section2">
+<div class="section2" *ngIf="showSection2">
   <app-eco></app-eco>
   <app-doublechains></app-doublechains>
 </div>

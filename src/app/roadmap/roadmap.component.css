@@ -107,4 +107,7 @@ p {
   .roadmap_icon_2017 {
     width: 21%;
   }
+  .roadmap_card {
+    margin-top: -27%;
+  }
 }

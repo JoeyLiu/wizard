@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class IndexComponent implements OnInit {
   timer: any;
   pc: boolean;
+  imageURL: any;
   offset: any;
   windowWidth: any;
   showSection3: any;
@@ -22,7 +23,11 @@ export class IndexComponent implements OnInit {
     this.timer = setInterval(() => {
       this.checkScreen();
     }, 200);
-
+    if (document.body.clientWidth < 450) {
+      this.imageURL = '/assets/index_small.png';
+    } else {
+      this.imageURL = '/assets/index.jpg';
+    }
   }
   checkScreen() {
 

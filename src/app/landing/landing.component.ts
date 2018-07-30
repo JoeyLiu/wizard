@@ -9,7 +9,10 @@ declare var returnCitySN: any;
 export class LandingComponent implements OnInit {
   timer: any;
   offset: any;
+  countDown: any;
   windowWidth: any;
+  showSection1: any;
+  showSection2: any;
   showSection3: any;
   showSection4: any;
   showSection5: any;
@@ -21,25 +24,25 @@ export class LandingComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    this.countDown = 0;
     // console.log(returnCitySN["cip"]);
     this.showAll();
+    //this.hideAll();
     console.log(navigator.userAgent);
     if(navigator.userAgent.indexOf('iPad') !== -1) {
       this.userAgent = 2;
     }
-    //console.log(navigator.appName);
-    this.windowWidth = document.body.clientWidth;
-    if (this.windowWidth < 500 || this.userAgent === 2) {
-      this.showSection3 = true;
-    }
-    if (this.windowWidth < 450 ) {
-      this.phone = true;
-    } else {
-      this.pc = true;
-    }
+     //this.windowWidth = ;
+
+
     this.timer = setInterval(() => {
       //this.checkScreen();
-    }, 200);
+      this.countDown++;
+      if (this.countDown > 5){
+        //this.showAll();
+      }
+
+    }, 1000);
     //document.addEventListener('DOMContentLoaded',this.loaded());
   }
   checkScreen() {
@@ -81,9 +84,25 @@ export class LandingComponent implements OnInit {
     console.log('loaded');
   }
   showAll(){
+    this.showSection1 = true;
+    this.showSection2 = true;
     this.showSection6 = true;
     this.showSection5 = true;
     this.showSection4 = true;
     this.showSection3 = true;
+    if (document.body.clientWidth < 450 ) {
+      this.phone = true;
+      console.log('show phone service');
+    } else {
+      this.pc = true;
+    }
+  }
+  hideAll(){
+    this.showSection1 = false;
+    this.showSection2 = false;
+    this.showSection6 = false;
+    this.showSection5 = false;
+    this.showSection4 = false;
+    this.showSection3 = false;
   }
 }

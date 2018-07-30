@@ -1,13 +1,13 @@
 <div class="concept_body">
-  <div class="detail_toggle" *ngIf="pc">
+  <div class="detail_toggle">
     <!--<p class="toogle_txt">宗旨</p>-->
-    <mat-slide-toggle color="primary" [checked]="checked" (toggleChange)="toggleall()" labelPosition="before">详细</mat-slide-toggle>
+    <mat-slide-toggle color="primary" [checked]="checked" (toggleChange)="toggleall()">详情</mat-slide-toggle>
     <!--<p class="toogle_txt">详情</p>-->
   </div>
   <mat-grid-list cols="{{col_count}}" class="concept_list">
     <mat-grid-tile class="concept_1">
-      <p class="concept_head1" *ngIf="!checks[0]" (mouseover)="check(1)" (mouseleave)="uncheck(1)" (click)="click(1)">
-        <img src="/assets/concept_icon1.png" style="padding: 7.5px;">
+      <p class="concept_head1" *ngIf="!checks[0]" (mouseover)="check(1)" (mouseleave)="uncheck(1)" (click)="clicked(1)">
+        <img src="/assets/concept_icon1_4x.png" style="padding: 7.5px;">
         <br/>公开透明<br/>TRANSPARENT
       </p>
       <p class="concept_head1_txt" *ngIf="checks[0]" (mouseover)="check(1)" (mouseleave)="uncheck(1)">
@@ -16,7 +16,7 @@
     </mat-grid-tile>
     <mat-grid-tile class="concept_2">
       <p class="concept_head1" *ngIf="!checks[1]" (mouseover)="check(2)" (mouseleave)="uncheck(2)">
-        <img src="/assets/concept_icon2.png">
+        <img src="/assets/concept_icon2_4x.png">
         <br/>简洁流畅<br/>CONCISE
       </p>
       <p class="concept_head1_txt" *ngIf="checks[1]" (mouseover)="check(2)" (mouseleave)="uncheck(2)">
@@ -25,7 +25,7 @@
     </mat-grid-tile>
     <mat-grid-tile class="concept_3">
       <p class="concept_head1" *ngIf="!checks[2]" (mouseover)="check(3)" (mouseleave)="uncheck(3)">
-        <img src="/assets/concept_icon3.png">
+        <img src="/assets/concept_icon3_4x.png">
         <br/>代码开源<br/>OPEN SOURCE
       </p>
       <p class="concept_head1_txt" *ngIf="checks[2]" (mouseover)="check(3)" (mouseleave)="uncheck(3)">
@@ -34,7 +34,7 @@
     </mat-grid-tile>
     <mat-grid-tile>
       <p class="concept_head1" *ngIf="!checks[3]" (mouseover)="check(4)" (mouseleave)="uncheck(4)">
-        <img src="/assets/concept_icon4.png" style="padding: 6.5px;">
+        <img src="/assets/concept_icon4_4x.png" style="padding: 6.5px;">
         <br/>社区自治<br/>COMMUNITY
       </p>
       <p class="concept_head1_txt" *ngIf="checks[3]" (mouseover)="check(4)" (mouseleave)="uncheck(4)">

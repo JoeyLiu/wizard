@@ -10,7 +10,7 @@ p{
   text-align: center;
   /*line-height: 20px;*/
   font-size: 12px;
-  font-weight: 100;
+  /*font-weight: 100;*/
 }
 .apps_head {
   margin-top: 10%;
@@ -47,6 +47,7 @@ p{
   width: 60%;
   margin-left: auto;
   margin-right: auto;
+  letter-spacing: 1.5px;
 }
 img {
   width: 20px;
@@ -58,7 +59,7 @@ img {
   margin: 0px;
   text-align: center;
   font-size: 12px;
-  opacity: .8;
+  opacity: 1;
 }
 @media only screen and (max-width:450px) {
   .apps_head p {
@@ -82,5 +83,10 @@ img {
 
     margin-bottom: 0px;
     width: 80%;
+  }
+  img {
+    width: 30px;
+    /*height: 20px;*/
+    /*padding: 5px;*/
   }
 }

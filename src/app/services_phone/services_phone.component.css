@@ -10,7 +10,7 @@ p{
   text-align: center;
   /*line-height: 20px;*/
   font-size: 12px;
-  font-weight: 100;
+  /*font-weight: 100;*/
 }
 .services_heads {
   /*position: absolute;*/
@@ -65,8 +65,15 @@ img {
   font-size: 12px;
   -webkit-transform:scale(0.8);
   -moz-transform: scale(1);
-  font-weight: 200;
+  /*font-weight: 200;*/
+  letter-spacing: 1.5px;
 }
 mat-divider {
-  margin-top: 10px;
+  margin-top: 25px;
+}
+
+.services_content p {
+  text-align: left;
+  font-size: 14px;
+  line-height: 30px;
 }
